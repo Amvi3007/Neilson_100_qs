@@ -28,7 +28,6 @@ public class Reverse_Linked_List {
         return prev;
     }
 
-    // Print linked list
     public static void printList(ListNode head) {
         ListNode temp = head;
 
@@ -42,7 +41,7 @@ public class Reverse_Linked_List {
 
     public static void main(String[] args) {
 
-        // Create linked list: 1 -> 2 -> 3 -> 4 -> 5
+        
         ListNode head = new ListNode(1);
         head.next = new ListNode(2);
         head.next.next = new ListNode(3);

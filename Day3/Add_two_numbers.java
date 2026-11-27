@@ -62,7 +62,6 @@ public class Add_two_numbers {
         return dummy.next;
     }
 
-    // Print linked list
     public static void printList(ListNode head) {
 
         ListNode temp = head;
@@ -82,12 +81,12 @@ public class Add_two_numbers {
 
     public static void main(String[] args) {
 
-        // First number: 342 (stored as 2 -> 4 -> 3)
+       
         ListNode l1 = new ListNode(2);
         l1.next = new ListNode(4);
         l1.next.next = new ListNode(3);
 
-        // Second number: 465 (stored as 5 -> 6 -> 4)
+        
         ListNode l2 = new ListNode(5);
         l2.next = new ListNode(6);
         l2.next.next = new ListNode(4);

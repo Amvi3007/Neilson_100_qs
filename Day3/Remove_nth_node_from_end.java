@@ -47,7 +47,7 @@ public class Remove_nth_node_from_end {
         return dummy.next;
     }
 
-    // Print linked list
+   
     public static void printList(ListNode head) {
 
         ListNode temp = head;
@@ -62,7 +62,7 @@ public class Remove_nth_node_from_end {
 
     public static void main(String[] args) {
 
-        // Create linked list: 1 -> 2 -> 3 -> 4 -> 5
+       
         ListNode head = new ListNode(1);
         head.next = new ListNode(2);
         head.next.next = new ListNode(3);

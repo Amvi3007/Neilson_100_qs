@@ -51,14 +51,12 @@ public class Binary_traversal_Order {
 
     public static void main(String[] args) {
 
-        // Creating a binary tree
         TreeNode root = new TreeNode(3);
         root.left = new TreeNode(9);
         root.right = new TreeNode(20);
         root.right.left = new TreeNode(15);
         root.right.right = new TreeNode(7);
 
-        // Calling level order traversal
         List<List<Integer>> ans = levelOrder(root);
 
         System.out.println(ans);

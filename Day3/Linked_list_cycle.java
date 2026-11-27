@@ -32,13 +32,13 @@ public class Linked_list_cycle {
 
     public static void main(String[] args) {
 
-        // Create linked list: 1 -> 2 -> 3 -> 4
+        
         ListNode head = new ListNode(1);
         head.next = new ListNode(2);
         head.next.next = new ListNode(3);
         head.next.next.next = new ListNode(4);
 
-        // Create a cycle: 4 -> 2
+       
         head.next.next.next.next = head.next;
 
         if (hasCycle(head)) {

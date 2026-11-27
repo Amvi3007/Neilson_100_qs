@@ -17,17 +17,15 @@ public class Reorder_list {
         ListNode slow = head;
         ListNode fast = head;
 
-        // Step 1: Find middle
         while (fast != null && fast.next != null) {
             slow = slow.next;
             fast = fast.next.next;
         }
 
-        // Step 2: Separate second half
+    
         ListNode newnode = slow.next;
         slow.next = null;
 
-        // Step 3: Reverse second half
         ListNode prev = null;
         ListNode next = null;
         ListNode cur = newnode;
@@ -41,7 +39,6 @@ public class Reorder_list {
 
         ListNode newhead = prev;
 
-        // Step 4: Merge alternately
         ListNode cur1 = head;
         ListNode cur2 = newhead;
 
@@ -58,7 +55,6 @@ public class Reorder_list {
         }
     }
 
-    // Print linked list
     public static void printList(ListNode head) {
 
         ListNode temp = head;
@@ -73,7 +69,6 @@ public class Reorder_list {
 
     public static void main(String[] args) {
 
-        // Create linked list: 1 -> 2 -> 3 -> 4 -> 5
         ListNode head = new ListNode(1);
         head.next = new ListNode(2);
         head.next.next = new ListNode(3);
